@@ -1,0 +1,53 @@
+@import 'vars';
+
+nz-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 64px;
+    padding: 0 25px;
+    margin: 0;
+    margin-bottom: $default-padding-mobile;
+
+    background: $white;
+    box-shadow: $mountain-mist 0 2px 10px;
+    z-index: 3;
+
+    h3 {
+        font-size: $size-normal-extended;
+        color: $mountain-mist;
+        margin: 0;
+    }
+    @media(max-width: $bp-small-size) {
+        top: 128px;
+    }
+}
+
+.wrapper {
+    width: calc(100% - 20px);
+    min-height: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    background: $white;
+    @media(max-width: $bp-small-size) {
+        margin-top: 75px ;
+        width: calc( 100% - 20px);
+        padding: 10px;
+    }
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow: auto;
+}
+
+nz-table {
+    display: block;
+    margin-top: $default-padding-mobile;
+    min-width: 1200px;
+}
+
+nz-alert {
+    margin: $default-padding-mobile 0;
+}
